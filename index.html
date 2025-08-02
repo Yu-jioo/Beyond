@@ -495,6 +495,7 @@
             color: var(--moon-glow);
             font-size: 0.95rem;
             max-width: 160px;
+            
             outline: none;
             box-shadow: none;
         }
@@ -511,9 +512,10 @@
             border: 1px solid rgba(100, 150, 255, 0.2);
             padding: 0.6rem 1.2rem;
             border-radius: 6px;
-            font-size: 0.9rem;
+            font-size: 1.2rem;
             cursor: pointer;
             transition: all 0.3s ease;
+            font-family: 'Cormorant Garamond', serif;
         }
 
         .set-date-btn:hover {
@@ -862,36 +864,7 @@
             opacity: 1;
         }
 
-        .quote-container {
-            padding: 1.8rem;
-            border-left: 2px solid var(--moon-glow);
-            background: rgba(15, 30, 60, 0.2);
-            margin: 1.8rem 0;
-            position: relative;
-            transition: transform 0.3s ease;
-        }
-        
-        .quote-container:hover {
-            transform: translateY(-3px);
-        }
 
-        .quote-container::before {
-            content: '"';
-            position: absolute;
-            top: -20px;
-            left: 10px;
-            font-size: 4.5rem;
-            font-family: 'Cormorant Garamond', serif;
-            color: rgba(180, 200, 255, 0.1);
-        }
-
-        .quote {
-            font-style: italic;
-            font-size: 1.2rem;
-            line-height: 1.7;
-            margin-bottom: 1rem;
-            opacity: 0.9;
-        }
 
         .signature {
             text-align: right;
@@ -935,7 +908,7 @@
         .sigil-icon {
             font-size: 1.2rem;
             color: var(--moon-glow);
-            animation: rotate 15s linear infinite;
+            animation: rotate 10s linear infinite;
             opacity: 0.9;
         }
 
@@ -1255,6 +1228,7 @@
         }
         
         .night-popup-text {
+                        font-family: 'Cormorant Garamond', serif;
             font-size: 1.2rem;
             margin-bottom: 1.8rem;
             line-height: 1.6;
@@ -1562,7 +1536,7 @@ So will you.
                 <h3 class="section-title" data-key="journeyTitle">Our Journey</h3>
                 <p class="about-text" data-key="journeyText1">
                     A journey of cold winds and certainty,
-A lone travelers experience a life of ups and downs.
+A lone traveler experience a life of ups and downs.
 A heart of steel forged from countless setbacks,
 A lifetime of effort to forge one sword.
                 </p>
@@ -1578,22 +1552,15 @@ A lifetime of effort to forge one sword.
                     <a href="https://t.me/BeyonderSect" class="social-icon"><i class="fab fa-telegram"></i></a>
                     <a href="https://www.instagram.com/moaz_nouh?igsh=aTFvcXVlZWdsaXM1" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="https://x.com/moazless?s=09" class="social-icon"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://tiktok.com/@beyonder.moaz" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                    
                 </div>
-            </div>
-            
-            <div class="quote-container">
-                <p class="quote" data-key="quote">
-"The higher you rise, The fewer voices you hear—— But the stronger they become. "
-                </p>
-                <p class="signature" data-key="quoteSignature">— Beyonder, The Commander</p>
             </div>
             
             <div class="sigil">
                 <div class="sigil-circle">
                     <div class="sigil-inner">
-                        <div class="sigil-icon">(✧‿⁠◕⁠)</div>
+                        <div class="sigil-icon">⁦(⁠╯⁠°⁠□⁠°⁠）⁠╯</div>
                     </div>
                 </div>
             </div>
@@ -1618,7 +1585,7 @@ A lifetime of effort to forge one sword.
         <div class="night-stars" id="night-stars"></div>
         <div class="night-popup-content">
             <h2 class="night-popup-title">Night <span id="completed-night-number">1</span> Conquered</h2>
-            <p class="night-popup-text">The moonlight grows stronger.</p>
+            <p class="night-popup-text">You are gradually become what you dream to be...</p>
             <button class="night-continue-btn" id="night-popup-close">Continue</button>
         </div>
     </div>
@@ -1668,7 +1635,7 @@ A lifetime of effort to forge one sword.
                 challengeText3: "The moon doesn’t ask for attention.\nIt just rises.\nSo will you.",
                 challengeSignature: "-Moaz",
                 journeyTitle: "Our Journey",
-                journeyText1: "A journey of cold winds and certainty,\nA lone travelers experience a life of ups and downs.\nA heart of steel forged from countless setbacks,\nA lifetime of effort to forge one sword.",
+                journeyText1: "A journey of cold winds and certainty,\nA lone traveler experience a life of ups and downs.\nA heart of steel forged from countless setbacks,\nA lifetime of effort to forge one sword.",
                 journeySignature: "-Fang yuan",
                 socialTitle: "Connect With The Sect",
                 quote: "\"The higher you rise, The fewer voices you hear—— But the stronger they become.\"",
@@ -1681,7 +1648,7 @@ A lifetime of effort to forge one sword.
                 popupText3: "Your Perseverance has earned you a place with the Beyonders.",
                 popupButton: "Continue Your Journey",
                 nightPopupTitle: "Night {0} Conquered",
-                nightPopupText: "The moonlight grows stronger.",
+                nightPopupText: "You are gradually become what you dream to be...",
                 nightPopupButton: "Continue",
                 confirmationTitle: "End Challenge?",
                 confirmationText: "Are you sure you want to end the challenge? All progress will be frozen until you start a new challenge.",
@@ -1738,14 +1705,14 @@ A lifetime of effort to forge one sword.
                 navChallenge: "الليالي",
                 navAbout: "نبذه",
                 headline: "30 ليلة. شخص واحد.",
-                intro: "تحت نفس القمر، بنفس العادات، لمدة 30 ليلة. #30NightBeyonder",
+                intro: "تحت نفس القمر، بنفس العادات، لمدة 30 ليلة. 30NightBeyonder#",
                 beginButton: "ابدأ التحدي",
                 progressTitle: "تقدمك",
-                userGreeting: "أهلاً بك،",
+                userGreeting: "Welcome",
                 dateLabel: "تعيين تاريخ بدء التحدي:",
-                setDateButton: "تعيين التاريخ",
+                setDateButton: "Start",
                 progressText: "الليلة {0} من 30 - {1}",
-                finishButton: "إنهاء التحدي",
+                finishButton: "End Challenge",
                 newChallengeButton: "بدء تحدي جديد",
                 aboutTitle: "طائفة فرسان ضوء القمر",
                 challengeTitle: " التحدي الحالي",
@@ -1771,8 +1738,8 @@ A lifetime of effort to forge one sword.
                 nightPopupButton: "استمر",
                 confirmationTitle: "إنهاء التحدي؟",
                 confirmationText: "هل أنت متأكد أنك تريد إنهاء التحدي؟ سيتم تجميد كل التقدم حتى تبدأ تحديًا جديدًا.",
-                confirmButton: "نعم، إنهاء التحدي",
-                cancelButton: "إلغاء",
+                confirmButton: "End The Challenge",
+                cancelButton: "Cancel",
                 progressMessages: [
                     "استمر في الدفع",
                     "مرحلة القمر الجديد",
@@ -2442,7 +2409,7 @@ A lifetime of effort to forge one sword.
         translations.ar.successNotification = "تم بنجاح";
         translations.ar.errorNotification = "خطأ، الرجاء المحاولة مرة أخرى";
         translations.ar.languageChanged = "تم تغيير اللغة إلى العربية";
-        translations.ar.nightLabel = "الليلة";
+        translations.ar.nightLabel = "Night";
         translations.ar.newChallengeNotification = "تم بدء تحدي جديد! قم بتعيين تاريخ البدء.";
         
         translations.en.successNotification = "Success";
